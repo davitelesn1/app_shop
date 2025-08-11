@@ -3,7 +3,9 @@
 
 ## 📱 Demonstração
 
-![App Demo](assets/demo/demo1.gif) 
+
+
+ <img src="assets/demo/demo1.gif" width="300"/>
 
 ## Descrição
 
