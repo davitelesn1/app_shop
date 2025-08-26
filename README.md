@@ -4,7 +4,7 @@
 
 ## 📷 Imagens do App
 
-<img src="assets/demo/Screenshot_1756213793.png" width="250"/> <img src="app_shop\assets\demo\Screenshot_1756213814.png" width="250"/> <img src="app_shop\assets\demo\Screenshot_1756213818.png" width="250"/> <img src="app_shop\assets\demo\Screenshot_1756213831.png" width="250"/>
+<img src="assets/demo/Screenshot_1756213793.png" width="250"/> <img src="assets\demo\Screenshot_1756213814.png" width="250"/> <img src="assets\demo\Screenshot_1756213818.png" width="250"/> <img src="assets\demo\Screenshot_1756213831.png" width="250"/>
 
 ## Descrição
 
