@@ -6,7 +6,9 @@ import 'package:shop/models/product_list.dart';
 import 'package:shop/pages/cart_page.dart';
 import 'package:shop/pages/orders_page.dart';
 import 'package:shop/pages/product_detail_page.dart';
+import 'package:shop/pages/product_form_page.dart';
 import 'package:shop/pages/products_overview_page.dart';
+import 'package:shop/pages/products_page.dart';
 import 'package:shop/utils/app_routes.dart';
 
 void main() {
@@ -18,35 +20,35 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (ctx) => ProductList(),
+          create: (_) => ProductList(),
         ),
         ChangeNotifierProvider(
-          create: (ctx) => Cart(),
+          create: (_) => Cart(),
         ),
         ChangeNotifierProvider(
-          create: (ctx) => OrderList(),
+          create: (_) => OrderList(),
         ),
       ],
-      
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSwatch().copyWith(
-            primary: Colors.blueAccent,
+            primary: Colors.purple,
             secondary: Colors.deepOrange,
           ),
           fontFamily: 'Lato',
         ),
         // home: const ProductsOverviewPage(),
         routes: {
+          AppRoutes.home: (ctx) => const ProductsOverviewPage(),
           AppRoutes.productDetail: (ctx) => const ProductDetailPage(),
-           AppRoutes.cart: (ctx) => const CartPage(),
-            AppRoutes.home: (ctx) => const ProductsOverviewPage(),
-             AppRoutes.orders: (ctx) => const OrdersPage(),
+          AppRoutes.cart: (ctx) => const CartPage(),
+          AppRoutes.orders: (ctx) => const OrdersPage(),
+          AppRoutes.products: (ctx) => const ProductsPage(),
+          AppRoutes.productForm: (ctx) => const ProductFormPage(),
         },
         debugShowCheckedModeBanner: false,
       ),
